@@ -14,7 +14,7 @@ import AdminProtectedRoute from "./pages/AdminProtectedRoute"
 import Dashboard from "./Components/Dashboard";
 import Food from "./Components/Food";
 import AddFoodPage from "./Components/AddFoodpage.jsx"
-import EditFoodPage from "./Components/EditFoodPage";
+import EditFoodPage from "./Components/EditFoodpage.jsx";
 import DetailsPage from "./Layout/DetailsPage";
 import Order from "./pages/Order";
 import Bookings from "./pages/Bookings";
