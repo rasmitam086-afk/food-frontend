@@ -13,7 +13,7 @@ import AdminPanel from "./pages/AdminPanel";
 import AdminProtectedRoute from "./pages/AdminProtectedRoute"
 import Dashboard from "./Components/Dashboard";
 import Food from "./Components/Food";
-import AddFoodpage from "./Components/AddFoodpage";
+import AddFoodPage from "./Components/AddFoodPage";
 import EditFoodpage from "./Components/EditFoodpage";
 import DetailsPage from "./Layout/DetailsPage";
 import Order from "./pages/Order";
