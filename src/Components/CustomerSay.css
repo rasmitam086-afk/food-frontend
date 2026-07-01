@@ -1,0 +1,69 @@
+.Customer-main {
+    width: 100%;
+    padding: 50px 7%;
+}
+
+.Customer-main .heading {
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.Customer-main .Card-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.Card-div .Card {
+    width: 30%;
+    height: 100%;
+    background-color: #f9f9f7;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+}
+
+.Card .heading {
+    font-size: 1.5rem;
+}
+
+.Card .para {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.Card .profile-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+    margin-top: 30px;
+    gap: 20px;
+    border-top: 1px solid gray;
+}
+
+.profile-div .profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.profile-img .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+    .Customer-main .Card-div {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Card-div .Card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.Hero {
+    background-image: /* linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), */
+    url("../assets/Background-img.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero .Hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Hero-content .Hero-Heading {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.Hero-content .para {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.Hero-content .button-div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.button-div .Book-btn {
+    background-color: #ad343e;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-div .Menu-btn {
+    color: black;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media(max-width:576px) {
+    .Hero-content .Hero-Heading {
+        font-size: 3rem;
+    }
+    .Hero-content .para {
+        width: 100%;
+    }
+}

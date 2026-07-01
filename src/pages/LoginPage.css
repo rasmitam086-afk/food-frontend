@@ -1,0 +1,151 @@
+
+
+.login-page {
+    min-height: 100vh;
+    background: #f5f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 65px;
+    font-weight: 400;
+    color: #2f2f2f;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-box {
+    height: 55px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    gap: 12px;
+}
+
+.input-box svg {
+    color: #b53039;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #b53039;
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #b53039;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-btn {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background: #b53039;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #99242d;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-link span {
+    color: #b53039;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .login-container h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 22px;
+    }
+    .login-container h1 {
+        font-size: 38px;
+    }
+    .login-subtitle {
+        font-size: 13px;
+    }
+    .input-box,
+    .login-btn {
+        height: 50px;
+    }
+}

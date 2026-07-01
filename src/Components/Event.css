@@ -1,0 +1,50 @@
+.Event-main {
+    width: 100%;
+    padding: 100px 7%;
+}
+
+.Event-main .Heading {
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.Event-main .Card-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Card-div .card {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card .head {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.card .para {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media (max-width: 576px) {
+    .Event-main .Card-div {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .Card-div .card {
+        width: 100%;
+    }
+}

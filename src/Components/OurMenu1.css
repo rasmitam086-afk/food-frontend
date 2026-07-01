@@ -1,0 +1,253 @@
+/* ===========================
+   MENU SECTION
+=========================== */
+
+.menu-section {
+  width: 100%;
+  padding: 80px 8%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 58px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", serif;
+}
+
+.menu-subtitle {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+
+/* ===========================
+   FILTER BUTTONS
+=========================== */
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.menu-buttons button {
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.menu-buttons button:hover {
+  background: #ad343e;
+  color: #fff;
+  border-color: #ad343e;
+}
+
+.menu-buttons .active {
+  background: #ad343e;
+  color: white;
+  border-color: #ad343e;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.menu-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #ededed;
+  transition: .35s;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,.08);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* ===========================
+   CARD CONTENT
+=========================== */
+
+.price {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ad343e;
+  font-weight: 700;
+}
+
+.old-price {
+  margin-left: 10px;
+  color: #999;
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu-card h2 {
+  margin: 14px 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.menu-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 0 18px 25px;
+}
+
+/* ===========================
+   LOADING
+=========================== */
+
+.loading {
+  text-align: center;
+  font-size: 22px;
+  color: #ad343e;
+  padding: 70px 0;
+  font-weight: 600;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1100px) {
+
+  .menu-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .menu-section {
+    padding: 70px 6%;
+  }
+
+  .menu-title {
+    font-size: 46px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .menu-card img {
+    height: 220px;
+  }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:600px) {
+
+  .menu-section {
+    padding: 60px 20px;
+  }
+
+  .menu-title {
+    font-size: 34px;
+  }
+
+  .menu-subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .menu-buttons {
+    gap: 10px;
+  }
+
+  .menu-buttons button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .menu-card img {
+    height: 230px;
+  }
+
+  .price {
+    font-size: 22px;
+  }
+
+  .old-price {
+    font-size: 15px;
+  }
+
+  .menu-card h2 {
+    font-size: 22px;
+  }
+
+  .menu-card p {
+    font-size: 14px;
+    padding: 0 16px 22px;
+  }
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:380px){
+
+  .menu-title{
+    font-size:30px;
+  }
+
+  .menu-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .menu-buttons button{
+    width:180px;
+  }
+
+  .menu-card img{
+    height:200px;
+  }
+
+}
