@@ -20,7 +20,7 @@ const EditFoodPage = () => {
   const getSingleFood = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8800/api/food/get-single/${id}`
+        `https://food-backend-5r9i.onrender.com/api/food/get-single/${id}`
       );
 
       const food = response.data.food;
@@ -73,7 +73,7 @@ const EditFoodPage = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:8800/api/food/update/${id}`,
+        `https://food-backend-5r9i.onrender.com/api/food/update/${id}`,
         formData,
         {
           withCredentials: true,

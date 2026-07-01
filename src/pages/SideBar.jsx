@@ -23,7 +23,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:8800/api/auth/logout", {
+      await axios.get("https://food-backend-5r9i.onrender.com/api/auth/logout", {
         withCredentials: true,
       });
 

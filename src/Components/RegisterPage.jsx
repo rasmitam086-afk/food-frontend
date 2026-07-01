@@ -24,7 +24,7 @@ function RegisterPage() {
   const handelSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post("http://localhost:8800/api/auth/register", {
+      const response = await axios.post("https://food-backend-5r9i.onrender.com/api/auth/register", {
         fullName, email, phone, gender, password
       }, { withCredentials: true })
       console.log(response.data);

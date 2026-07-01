@@ -11,7 +11,7 @@ function Contactadmin() {
       setLoading(true);
 
       const response = await axios.get(
-        "http://localhost:8800/api/contact/get-all"
+        "https://food-backend-5r9i.onrender.com/api/contact/get-all"
       );
 
       setContacts(response.data.data || []);
@@ -26,7 +26,7 @@ function Contactadmin() {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:8800/api/contact/delete/${id}`
+        `https://food-backend-5r9i.onrender.com/api/contact/delete/${id}`
       );
 
       alert("Contact deleted successfully");
