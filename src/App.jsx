@@ -14,7 +14,7 @@ import AdminProtectedRoute from "./pages/AdminProtectedRoute"
 import Dashboard from "./Components/Dashboard";
 import Food from "./Components/Food";
 import AddFoodPage from "./Components/AddFoodPage";
-import EditFoodpage from "./Components/EditFoodpage";
+import EditFoodPage from "./Components/EditFoodPage";
 import DetailsPage from "./Layout/DetailsPage";
 import Order from "./pages/Order";
 import Bookings from "./pages/Bookings";
@@ -55,20 +55,11 @@ function Layout() {
               />
               <Route
                 path="add-food"
-                element={<AddFoodpage/>}
+                element={<AddFoodPage/>}
               />
-              <Route
-                path="/admin/edit/:id"
-                element={<EditFoodpage/>}
-              />
-              <Route
-                path="/admin/booking"
-                element={<Bookings/>}
-              />
-              <Route
-                path="/admin/contact"
-                element={<Contactadmin/>}
-              />
+              <Route path="edit/:id" element={<EditFoodPage />} />
+<Route path="booking" element={<Bookings />} />
+<Route path="contact" element={<Contactadmin />} />
 
             </Route>
           </Route>
