@@ -1,5 +1,5 @@
 import "./Footer.css"
-import logo from "../assets/Food Logo.png"
+import logo from "../assets/Food-Logo.png"
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";

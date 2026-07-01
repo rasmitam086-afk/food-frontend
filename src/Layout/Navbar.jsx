@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
-import Logo from "../assets/Food Logo.png";
+import Logo from "../assets/Food-Logo.png";
 import { TiThMenu } from "react-icons/ti";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
